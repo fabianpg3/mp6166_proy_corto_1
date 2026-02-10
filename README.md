@@ -27,7 +27,7 @@ PENDIENTE
 PENDIENTE
 
 # Arbol de archivos con su descripción
-
+```
 capturas
     vedic_segmentado // Capturas de pantalla del diseño en Vivado, así como los diferentes reportes generados, para la versión segmentado del multiplicador Vedic
     vedic_uniciclo // Capturas de pantalla del diseño en Vivado, así como los diferentes reportes generados, para la versión uniciclo del multiplicador Vedic
@@ -65,7 +65,7 @@ implementaciones
             tb // Banco de pruebas
             tests // Pruebas realizadas para la verificación de ambos diseños
         vivado_project // Proyecto de Vivado utilizado para la implementación del diseño, mediante una plataforma objetivo AMD Kria KV260
-
+```
 # Tabla de resultados
 
 Diseño | Timing/delay de la ruta crítica | Frecuencia máxima | Latencia en ciclos de reloj | Consumo de LUTs | Consumo de FFs

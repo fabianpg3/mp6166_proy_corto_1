@@ -1,0 +1,1216 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Feb 10 12:55:13 2026
+# Process ID: 67731
+# Current directory: /home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/vivado.jou
+# Running On: fabian-desktop, OS: Linux, CPU Frequency: 4180.799 MHz, CPU Physical cores: 6, Host memory: 16343 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/media/fabian/TOOLS/tools/Vivado/2023.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp' for cell 'design_1_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.dcp' for cell 'design_1_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.dcp' for cell 'design_1_i/axi_gpio_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.dcp' for cell 'design_1_i/axi_gpio_3'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.dcp' for cell 'design_1_i/rst_ps8_0_99M'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_vedic_mult_64x64_par_0_4/design_1_vedic_mult_64x64_par_0_4.dcp' for cell 'design_1_i/vedic_mult_64x64_par_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.dcp' for cell 'design_1_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1.dcp' for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+INFO: [Project 1-454] Reading design checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2341.809 ; gain = 0.000 ; free physical = 1230 ; free virtual = 20752
+INFO: [Netlist 29-17] Analyzing 34 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc] for cell 'design_1_i/axi_gpio_0/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc] for cell 'design_1_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc] for cell 'design_1_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.xdc] for cell 'design_1_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.xdc] for cell 'design_1_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1_board.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1.xdc] for cell 'design_1_i/axi_gpio_1/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2_board.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_2/design_1_axi_gpio_0_2.xdc] for cell 'design_1_i/axi_gpio_2/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_board.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0.xdc] for cell 'design_1_i/axi_gpio_3/U0'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc:54]
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst'
+Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:27]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:48]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:51]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc:54]
+Finished Parsing XDC File [/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc] for cell 'design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst'
+INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 32 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2727.602 ; gain = 0.000 ; free physical = 1163 ; free virtual = 20651
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 8 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+24 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2727.602 ; gain = 1324.934 ; free physical = 1163 ; free virtual = 20651
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2727.602 ; gain = 0.000 ; free physical = 1121 ; free virtual = 20610
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2953.062 ; gain = 225.461 ; free physical = 923 ; free virtual = 20414
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 620 ; free virtual = 20109
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 620 ; free virtual = 20109
+Phase 1 Initialization | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 620 ; free virtual = 20109
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:00.78 ; elapsed = 00:00:00.2 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 619 ; free virtual = 20109
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+Phase 2 Timer Update And Timing Data Collection | Checksum: 33011a0e
+
+Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.24 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 12 pins
+INFO: [Opt 31-138] Pushed 58 inverter(s) to 1595 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1629ebf68
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.73 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+Retarget | Checksum: 1629ebf68
+INFO: [Opt 31-389] Phase Retarget created 6 cells and removed 337 cells
+INFO: [Opt 31-1021] In phase Retarget, 54 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1ab8adc70
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.85 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+Constant propagation | Checksum: 1ab8adc70
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 16 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 54 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 189ac8c88
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3257.867 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+Sweep | Checksum: 189ac8c88
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 414 cells
+INFO: [Opt 31-1021] In phase Sweep, 193 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 189ac8c88
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+BUFG optimization | Checksum: 189ac8c88
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][25]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][26]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][27]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][28]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][30]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][32]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][33]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][5]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][7]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][2]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][3]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][4]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][5]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][6]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][7]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][25]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][26]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][27]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][28]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][30]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][32]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][33]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][5]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][7]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][2]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][3]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][4]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][5]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][6]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][7]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 17031af08
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+Shift Register Optimization | Checksum: 17031af08
+INFO: [Opt 31-389] Phase Shift Register Optimization created 64 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: db39bca9
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+Post Processing Netlist | Checksum: db39bca9
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 66 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 28845539
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3289.883 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 28845539
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+Phase 9 Finalization | Checksum: 28845539
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               6  |             337  |                                             54  |
+|  Constant propagation         |               0  |              16  |                                             54  |
+|  Sweep                        |               0  |             414  |                                            193  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |              64  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             66  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 28845539
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3289.883 ; gain = 32.016 ; free physical = 612 ; free virtual = 20101
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3289.883 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 28845539
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3289.883 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 28845539
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3289.883 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3289.883 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+Ending Netlist Obfuscation Task | Checksum: 28845539
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3289.883 ; gain = 0.000 ; free physical = 612 ; free virtual = 20101
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3289.883 ; gain = 562.281 ; free physical = 612 ; free virtual = 20101
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 4586.000 ; gain = 1296.117 ; free physical = 193 ; free virtual = 18918
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.05 . Memory (MB): peak = 4594.004 ; gain = 0.000 ; free physical = 187 ; free virtual = 18918
+INFO: [Common 17-1381] The checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 174 ; free virtual = 18905
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1be57b08
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 174 ; free virtual = 18905
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 174 ; free virtual = 18905
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 5a2c163a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 179 ; free virtual = 18914
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: e89e1656
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 184 ; free virtual = 18917
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: e89e1656
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 184 ; free virtual = 18917
+Phase 1 Placer Initialization | Checksum: e89e1656
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 183 ; free virtual = 18916
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: f6961f58
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 178 ; free virtual = 18914
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: f6961f58
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 4626.020 ; gain = 0.000 ; free physical = 179 ; free virtual = 18916
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: f6961f58
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 4935.004 ; gain = 308.984 ; free physical = 182 ; free virtual = 18556
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 9589d32e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4967.020 ; gain = 341.000 ; free physical = 182 ; free virtual = 18555
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 9589d32e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4967.020 ; gain = 341.000 ; free physical = 182 ; free virtual = 18555
+Phase 2.1.1 Partition Driven Placement | Checksum: 9589d32e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4967.020 ; gain = 341.000 ; free physical = 182 ; free virtual = 18555
+Phase 2.1 Floorplanning | Checksum: 9589d32e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4967.020 ; gain = 341.000 ; free physical = 182 ; free virtual = 18555
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 9589d32e
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4967.020 ; gain = 341.000 ; free physical = 182 ; free virtual = 18555
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 738ab3a4
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:10 . Memory (MB): peak = 4967.020 ; gain = 341.000 ; free physical = 182 ; free virtual = 18555
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 10c59c74f
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:18 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 176 ; free virtual = 18493
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 210 LUTNM shape to break, 253 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 123, two critical 87, total 210, new lutff created 56
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 298 nets or LUTs. Breaked 210 LUTs, combined 88 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 1 candidate driver set for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 1 net.  Re-placed 8 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 0 new cell, deleted 0 existing cell and moved 8 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5024.047 ; gain = 0.000 ; free physical = 176 ; free virtual = 18493
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1402] Pass 1: Identified 53 candidate cells for Shift Register optimization.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 44 nets or cells. Created 55 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5024.047 ; gain = 0.000 ; free physical = 178 ; free virtual = 18495
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5024.047 ; gain = 0.000 ; free physical = 178 ; free virtual = 18495
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          210  |             88  |                   298  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |           55  |              0  |                    44  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          265  |             88  |                   343  |           0  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: c40d3d96
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:19 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 178 ; free virtual = 18495
+Phase 2.4 Global Placement Core | Checksum: 5e96bdca
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 191 ; free virtual = 18501
+Phase 2 Global Placement | Checksum: 5e96bdca
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:22 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 191 ; free virtual = 18501
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 5590ede7
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:25 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 193 ; free virtual = 18500
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 145dd4ebe
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:27 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 191 ; free virtual = 18500
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 1e156b434
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:00:31 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 202 ; free virtual = 18514
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1038323e8
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:32 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 213 ; free virtual = 18526
+Phase 3.3.2 Slice Area Swap | Checksum: 1038323e8
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:32 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 213 ; free virtual = 18526
+Phase 3.3 Small Shape DP | Checksum: 1fb0fcc51
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:00:34 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 212 ; free virtual = 18522
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1663b26c6
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:34 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 211 ; free virtual = 18522
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 116783578
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:35 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 211 ; free virtual = 18522
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 1a6c77051
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:39 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 218 ; free virtual = 18519
+Phase 3 Detail Placement | Checksum: 1a6c77051
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:39 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 226 ; free virtual = 18528
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 19310dfc2
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.657 | TNS=-70.559 |
+Phase 1 Physical Synthesis Initialization | Checksum: 28d74fce0
+
+Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.27 . Memory (MB): peak = 5024.047 ; gain = 0.000 ; free physical = 226 ; free virtual = 18528
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 28d74fce0
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.51 . Memory (MB): peak = 5024.047 ; gain = 0.000 ; free physical = 226 ; free virtual = 18528
+Phase 4.1.1.1 BUFG Insertion | Checksum: 19310dfc2
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:00:45 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 226 ; free virtual = 18528
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.071. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 12f7e0ab0
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:00 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 221 ; free virtual = 18530
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:00 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 221 ; free virtual = 18530
+Phase 4.1 Post Commit Optimization | Checksum: 12f7e0ab0
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:00 . Memory (MB): peak = 5024.047 ; gain = 398.027 ; free physical = 221 ; free virtual = 18530
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 189 ; free virtual = 18464
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 223b14c49
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:07 . Memory (MB): peak = 5052.031 ; gain = 426.012 ; free physical = 189 ; free virtual = 18463
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 223b14c49
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:07 . Memory (MB): peak = 5052.031 ; gain = 426.012 ; free physical = 189 ; free virtual = 18463
+Phase 4.3 Placer Reporting | Checksum: 223b14c49
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:07 . Memory (MB): peak = 5052.031 ; gain = 426.012 ; free physical = 189 ; free virtual = 18463
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 189 ; free virtual = 18463
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:07 . Memory (MB): peak = 5052.031 ; gain = 426.012 ; free physical = 189 ; free virtual = 18463
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 264bfc794
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:07 . Memory (MB): peak = 5052.031 ; gain = 426.012 ; free physical = 189 ; free virtual = 18463
+Ending Placer Task | Checksum: 2372d06b2
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:01:07 . Memory (MB): peak = 5052.031 ; gain = 426.012 ; free physical = 189 ; free virtual = 18463
+94 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:44 ; elapsed = 00:01:08 . Memory (MB): peak = 5052.031 ; gain = 458.027 ; free physical = 189 ; free virtual = 18463
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.19 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 181 ; free virtual = 18455
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.16 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 228 ; free virtual = 18477
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 226 ; free virtual = 18473
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.74 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 202 ; free virtual = 18472
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 202 ; free virtual = 18472
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.06 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 195 ; free virtual = 18465
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 195 ; free virtual = 18467
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 195 ; free virtual = 18470
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.85 . Memory (MB): peak = 5052.031 ; gain = 0.000 ; free physical = 195 ; free virtual = 18470
+INFO: [Common 17-1381] The checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 5076.043 ; gain = 0.000 ; free physical = 203 ; free virtual = 18461
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 7.58s |  WALL: 2.14s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5076.043 ; gain = 0.000 ; free physical = 203 ; free virtual = 18461
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.075 | TNS=-43.360 |
+Phase 1 Physical Synthesis Initialization | Checksum: 24c71c0b2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 5084.047 ; gain = 8.004 ; free physical = 204 ; free virtual = 18466
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.075 | TNS=-43.360 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 24c71c0b2
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 5084.047 ; gain = 8.004 ; free physical = 204 ; free virtual = 18466
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.075 | TNS=-43.360 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_first_stage_rpa_carry_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_j_bus[130]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Net driver design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/reg_k_bus[63]_i_2 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.060 | TNS=-43.330 |
+INFO: [Physopt 32-663] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61.  Re-placed instance design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/reg_k_bus[63]_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.053 | TNS=-43.316 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Critical path length was reduced through logic transformation on cell design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/reg_k_bus[63]_i_2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_59. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.043 | TNS=-43.280 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_k_bus[61]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_60. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_60. Critical path length was reduced through logic transformation on cell design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/reg_k_bus[62]_i_2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_58. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.035 | TNS=-43.078 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_57. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__53. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_52. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__48. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_47. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__43. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_42. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__38. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__33. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_32. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__28. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_27 was not replicated.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_27. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__23. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_22. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__18. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__13. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_12. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__8. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/I586. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_first_stage_rpa_carry_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_j_bus[130]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61.  Re-placed instance design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/reg_k_bus[63]_i_2_comp
+INFO: [Physopt 32-735] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.939 | TNS=-42.878 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_k_bus[61]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_60. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_56. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_54. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_52. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__48. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_47. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__43. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_42. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__38. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__33. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_32. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__28. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_27. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__23. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_22. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__18. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__13. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_12. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__8. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/k_bus[58]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.939 | TNS=-42.878 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 200 ; free virtual = 18474
+Phase 3 Critical Path Optimization | Checksum: 1d1654ef7
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 5084.047 ; gain = 8.004 ; free physical = 200 ; free virtual = 18474
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.939 | TNS=-42.878 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_k_bus[61]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_j_bus[130]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_60. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_60. Critical path length was reduced through logic transformation on cell design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/reg_k_bus[62]_i_2_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_56. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.935 | TNS=-42.642 |
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_first_stage_rpa_carry_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_57. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__53. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_52. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__48. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_47. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__43. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_42. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__38. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__33. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_32. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__28. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-571] Net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_27 was not replicated.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_27. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__23. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_22. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__18. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__13. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_12. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__8. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/I586. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_first_stage_rpa_carry_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/reg_j_bus[130]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_57. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__53. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_52. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__48. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_47. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__43. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_42. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__38. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_37. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__33. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_32. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__28. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_27. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__23. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_22. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__18. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__13. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_12. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__8. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/carry_out1__3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/I586. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.935 | TNS=-42.642 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 197 ; free virtual = 18475
+Phase 4 Critical Path Optimization | Checksum: 1d1654ef7
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:13 . Memory (MB): peak = 5084.047 ; gain = 8.004 ; free physical = 197 ; free virtual = 18475
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 197 ; free virtual = 18475
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 196 ; free virtual = 18474
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.935 | TNS=-42.642 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.140  |          0.718  |            0  |              0  |                     6  |           0  |           2  |  00:00:10  |
+|  Total          |          0.140  |          0.718  |            0  |              0  |                     6  |           0  |           3  |  00:00:10  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 187 ; free virtual = 18472
+Ending Physical Synthesis Task | Checksum: 27d9c1a14
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 5084.047 ; gain = 8.004 ; free physical = 187 ; free virtual = 18473
+INFO: [Common 17-83] Releasing license: Implementation
+246 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:15 . Memory (MB): peak = 5084.047 ; gain = 8.004 ; free physical = 187 ; free virtual = 18473
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 184 ; free virtual = 18475
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.72 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 236 ; free virtual = 18498
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 236 ; free virtual = 18498
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 234 ; free virtual = 18496
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 233 ; free virtual = 18498
+Wrote Device Cache: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 229 ; free virtual = 18498
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.82 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 229 ; free virtual = 18498
+INFO: [Common 17-1381] The checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 9561da9f ConstDB: 0 ShapeSum: 914104ea RouteDB: f4334199
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.41 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 227 ; free virtual = 18476
+Post Restoration Checksum: NetGraph: 23f88fdc | NumContArr: 6c100b7d | Constraints: d8192a79 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 22acac06f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 228 ; free virtual = 18474
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 22acac06f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 228 ; free virtual = 18474
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 22acac06f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:03 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 230 ; free virtual = 18476
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 22c40ef37
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:04 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 229 ; free virtual = 18476
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2237227d7
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:05 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 228 ; free virtual = 18477
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.908 | TNS=-30.246| WHS=-0.090 | THS=-30.098|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 27186
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 23273
+  Number of Partially Routed Nets     = 3913
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2b4af4598
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 241 ; free virtual = 18484
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2b4af4598
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 241 ; free virtual = 18484
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2795ead66
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:09 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 240 ; free virtual = 18489
+Phase 3 Initial Routing | Checksum: 1d2c0046e
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:09 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 240 ; free virtual = 18489
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3694
+ Number of Nodes with overlaps = 207
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.211 | TNS=-74.478| WHS=-0.056 | THS=-0.512 |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1bf6b39c2
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:18 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 252 ; free virtual = 18501
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 85
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.092 | TNS=-64.536| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: f271def5
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:22 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 259 ; free virtual = 18504
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.119 | TNS=-65.712| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 2203fdbf0
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:24 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 264 ; free virtual = 18507
+Phase 4 Rip-up And Reroute | Checksum: 2203fdbf0
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:24 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 264 ; free virtual = 18507
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 27f5ec151
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:26 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 270 ; free virtual = 18505
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.092 | TNS=-64.536| WHS=0.010  | THS=0.000  |
+
+
+Phase 5.1.2 Update Timing
+Phase 5.1.2 Update Timing | Checksum: 2580f37a0
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:27 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 274 ; free virtual = 18507
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.092 | TNS=-64.536| WHS=0.010  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 228ec6e61
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:35 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 273 ; free virtual = 18508
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 228ec6e61
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:35 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 273 ; free virtual = 18508
+Phase 5 Delay and Skew Optimization | Checksum: 228ec6e61
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:35 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 273 ; free virtual = 18508
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 269b955a9
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:36 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 274 ; free virtual = 18507
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.092 | TNS=-57.040| WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:36 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 274 ; free virtual = 18507
+Phase 6 Post Hold Fix | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:36 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 274 ; free virtual = 18507
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.88528 %
+  Global Horizontal Routing Utilization  = 2.04501 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 59.434%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 54.5024%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 46.1538%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 47.1154%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:36 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 274 ; free virtual = 18507
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:00:36 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 276 ; free virtual = 18509
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:37 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 271 ; free virtual = 18505
+
+Phase 10 Resolve XTalk
+Phase 10 Resolve XTalk | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:37 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 271 ; free virtual = 18505
+
+Phase 11 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.092 | TNS=-57.040| WHS=0.010  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 11 Post Router Timing | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:00:37 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 271 ; free virtual = 18504
+Time taken to check if laguna hold fix is required (in secs): 0
+
+Phase 12 Physical Synthesis in Router
+
+Phase 12.1 Physical Synthesis Initialization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.093 | TNS=-56.802 | WHS=0.010 | THS=0.000 |
+Phase 12.1 Physical Synthesis Initialization | Checksum: 1b0e2297e
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:00:41 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 266 ; free virtual = 18506
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 12.2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.093 | TNS=-56.802 | WHS=0.010 | THS=0.000 |
+INFO: [Physopt 32-952] Improved path group WNS = -1.061. Path group: clk_pl_0. Processed net: design_1_i/vedic_mult_64x64_par_0/inst/reg_first_stage_rpa_carry_out.
+INFO: [Physopt 32-952] Improved path group WNS = -1.060. Path group: clk_pl_0. Processed net: design_1_i/vedic_mult_64x64_par_0/inst/reg_k_bus[59].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_pl_0. Processed net: design_1_i/vedic_mult_64x64_par_0/inst/reg_first_stage_rpa_carry_out.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_pl_0. Processed net: design_1_i/vedic_mult_64x64_par_0/inst/reg_j_bus[130].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_pl_0. Processed net: design_1_i/vedic_mult_64x64_par_0/inst/u1/u0/u0/u0/u0/rpa_first_stage_inst_u0/int_carry_out_res_61.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.060 | TNS=-56.609 | WHS=0.008 | THS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 264 ; free virtual = 18504
+Phase 12.2 Critical Path Optimization | Checksum: 148566d8f
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:42 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 264 ; free virtual = 18504
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 269 ; free virtual = 18509
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-1.060 | TNS=-56.609 | WHS=0.008 | THS=0.000 |
+Phase 12 Physical Synthesis in Router | Checksum: 121cb8aee
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:42 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 269 ; free virtual = 18509
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 14b9d1985
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:43 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 257 ; free virtual = 18507
+Ending Routing Task | Checksum: 14b9d1985
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:43 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 254 ; free virtual = 18504
+INFO: [Common 17-83] Releasing license: Implementation
+275 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:00 ; elapsed = 00:00:45 . Memory (MB): peak = 5084.047 ; gain = 0.000 ; free physical = 254 ; free virtual = 18504
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+285 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 186 ; free virtual = 18458
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.73 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 165 ; free virtual = 18461
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 165 ; free virtual = 18461
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.23 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 225 ; free virtual = 18502
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 220 ; free virtual = 18497
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 217 ; free virtual = 18497
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 5140.074 ; gain = 0.000 ; free physical = 217 ; free virtual = 18497
+INFO: [Common 17-1381] The checkpoint '/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/vivado_project/zynq_proc_mult_design/zynq_proc_mult_design.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 10 12:58:33 2026...

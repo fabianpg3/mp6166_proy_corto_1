@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/env/agents/mult_agent/mult_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/env/ref_model/mult_ref_model_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/env/top/mult_env_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/tb/src/mult_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/tests/sequence_lib/src/mult_seq_list.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/tests/src/mult_test_list.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/fabian/Documents/TEC/Maestria/IC_2026/fpga_design/proyecto_corto_1/verif/tb/src/mult_tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult_tb_top

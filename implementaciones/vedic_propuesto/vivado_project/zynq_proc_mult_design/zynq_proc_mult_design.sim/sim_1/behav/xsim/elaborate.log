@@ -1,0 +1,38 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /media/fabian/TOOLS/tools/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mult_tb_top_behav xil_defaultlib.mult_tb_top xil_defaultlib.glbl -log elaborate.log -L UVM -timescale 1ns/1ps 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4468] File : /proj/xbuilds/SWIP/9999.0_0820_0302/installs/lin64/Vivado/2024.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.mult_test_list
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.mult_agent_pkg
+Compiling package xil_defaultlib.mult_ref_model_pkg
+Compiling package xil_defaultlib.mult_env_pkg
+Compiling package xil_defaultlib.mult_seq_list
+Compiling module xil_defaultlib.dr_cb
+Compiling module xil_defaultlib.rc_cb
+Compiling module xil_defaultlib.mult_interface
+Compiling module xil_defaultlib.ha
+Compiling module xil_defaultlib.vedic_mult_2x2_pipeline
+Compiling module xil_defaultlib.fa
+Compiling module xil_defaultlib.rpa(WIDTH=4)
+Compiling module xil_defaultlib.vedic_mult_4x4_param_pipeline
+Compiling module xil_defaultlib.rpa(WIDTH=8)
+Compiling module xil_defaultlib.vedic_mult_8x8_param_pipeline
+Compiling module xil_defaultlib.rpa(WIDTH=16)
+Compiling module xil_defaultlib.vedic_mult_16x16_param_pipeline
+Compiling module xil_defaultlib.rpa(WIDTH=32)
+Compiling module xil_defaultlib.vedic_mult_32x32_param_pipeline
+Compiling module xil_defaultlib.rpa(WIDTH=64)
+Compiling module xil_defaultlib.vedic_mult_64x64_param_pipeline
+Compiling module xil_defaultlib.mult_tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mult_tb_top_behav

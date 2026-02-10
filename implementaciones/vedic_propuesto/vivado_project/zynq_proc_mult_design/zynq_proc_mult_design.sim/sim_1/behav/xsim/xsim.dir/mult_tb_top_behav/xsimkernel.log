@@ -1,0 +1,7 @@
+Running: xsim.dir/mult_tb_top_behav/xsimk -simmode gui -testplusarg UVM_TESTNAME=mult_basic_test -testplusarg UVM_VERBOSITY=UVM_LOW -wdb mult_tb_top_behav.wdb -simrunnum 0 -socket 41595
+Design successfully loaded
+Design Loading Memory Usage: 63392 KB (Peak: 63392 KB)
+Design Loading CPU Usage: 80 ms
+Simulation completed
+Simulation Memory Usage: 203696 KB (Peak: 203696 KB)
+Simulation CPU Usage: 11670 ms

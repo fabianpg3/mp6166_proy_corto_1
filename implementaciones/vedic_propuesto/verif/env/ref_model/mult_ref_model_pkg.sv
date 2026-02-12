@@ -1,0 +1,24 @@
+`ifndef MULT_REF_MODEL_PKG
+`define MULT_REF_MODEL_PKG
+
+package mult_ref_model_pkg;
+
+   import uvm_pkg::*;
+   `include "uvm_macros.svh"
+
+   //////////////////////////////////////////////////////////
+   // importing packages : agent,ref model, register ...
+   /////////////////////////////////////////////////////////
+   import mult_agent_pkg::*;
+
+   //////////////////////////////////////////////////////////
+   // include ref model files 
+   /////////////////////////////////////////////////////////
+  `include "mult_ref_model.sv"
+
+endpackage
+
+`endif
+
+
+

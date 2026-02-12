@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../zynq_proc_mult_design.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../zynq_proc_mult_design.gen/sources_1/bd/design_1/ipshared/2fcd/hdl" --include "../../../../../../verif/env/agents/mult_agent" --include "/media/fabian/TOOLS/tools/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../../../source_code/fa/fa.v" \
+"../../../../../../source_code/ha/ha.v" \
+"../../../../../../source_code/rpa/rpa.v" \
+"../../../../../../source_code/16x16/vedic_mult_16x16_param_pipeline.v" \
+"../../../../../../source_code/2x2/vedic_mult_2x2_pipeline.v" \
+"../../../../../../source_code/32x32/vedic_mult_32x32_param_pipeline.v" \
+"../../../../../../source_code/4x4/vedic_mult_4x4_param_pipeline.v" \
+"../../../../../../source_code/64x64/vedic_mult_64x64_param_pipeline.v" \
+"../../../../../../source_code/8x8/vedic_mult_8x8_param_pipeline.v" \
+
+sv xil_defaultlib  --include "../../../../zynq_proc_mult_design.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../zynq_proc_mult_design.gen/sources_1/bd/design_1/ipshared/2fcd/hdl" --include "../../../../../../verif/env/agents/mult_agent" --include "/media/fabian/TOOLS/tools/Vivado/2023.2/data/xilinx_vip/include" \
+"../../../../../../verif/env/agents/mult_agent/mult_agent_pkg.sv" \
+"../../../../../../verif/env/ref_model/mult_ref_model_pkg.sv" \
+"../../../../../../verif/env/top/mult_env_pkg.sv" \
+"../../../../../../verif/tb/src/mult_interface.sv" \
+"../../../../../../verif/tests/sequence_lib/src/mult_seq_list.sv" \
+"../../../../../../verif/tests/src/mult_test_list.sv" \
+"../../../../../../verif/tb/src/mult_tb_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

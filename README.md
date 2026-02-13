@@ -4,6 +4,10 @@
 
 A continuación se presentan los resultados de la síntesis e implementación de tres diferentes diseños para la multiplicación entre dos operandos de 64 bits. Para ello se utilizaron diseños como: 1) arquitectura de 64x64 uniciclo usando el operador *, 2) Arquitectura segmentada de multiplicadores de 8x8 con suma de productos parciales y registros y 3) un diseño propuesto basado en matemáticas Védicas (Vedic multiplier). 
 
+PENDIENTE
+
+PENDIENTE
+
 Para el diseño propuesto basado en matemáticas Védicas, se utilizaron las siguientes referencias:
 
 @INPROCEEDINGS{10574654,
@@ -21,10 +25,21 @@ https://digitalsystemdesign.in/vedic-multiplier/?srsltid=AfmBOopUmrreXWVTSEUhyvt
 
 
 # Explicación de los resultados
+
+PENDIENTE 
+
 PENDIENTE
 
+Con respecto al diseño que emplea matemáticas Védicas, en el caso de uniciclo se observa que el timing se cumple pero con un margen muy mínimo, ya que el WNS es de apenas 0.213 ns, lo cual se traduce en una frecuencia máxima de 320 MHz, tal como se mostrará más adelante. Esto indica que el diseño corre ligeramente por arriba de la frecuencia máxima objetivo, de 300 MHz, alrededor de un 6% mayor al objetivo. El consumo de recursos es también bastante elevado, ya que el reporte de utilización obtenido de 8702 LUTs para lógica secuencial es dos ordenes de magnitud mayor al de la implementación en uniciclo optimizada por la herramienta, por ejemplo.
+
+Por último, con respecto al caso segmentado del diseño que emplea matemáticas Védicas, se observa un timing completamente por fuera del objetivo planteado de 3.33 ns, equivalente a la frecuencia de operación de 300 MHz, ya que el delay de la ruta crítica fue de 4.393 ns, lo cual se traduce a una frecuencia máxima de 227.63 MHz; un 24% por debajo de la meta del diseño. Así mismo, nótese como el consumo de recursos crece exponencialmente, donde predomina el uso de celdas de registro debido al pipeline añadido entre etapas del diseño multiplicador. La latencia en ciclos de reloj igual a 28 fue obtenida mediante simulaciones funcionales pre-síntesis, gracias al ambiente de verificación que se desarrolló en UVM.
+
 # Instrucciones de construcción
-PENDIENTE
+
+Se procedió a implementar un proyecto en Vivado que emplea la tarjeta Kria KV260. Cada uno de los diseños se construyó mediante un bloque de IP Integrator. Finalmente, en cada uno de las carpetas de los diseños en el presente repositorio se entregan los diferentes proyectos de Vivado ya construidos. Una vez allí, se ejecutaron las fases de síntesis e implementación y así concluir con las métricas presentadas en la sección de Tabla de Resultados.
+
+PENDIENTE?
+
 
 # Arbol de archivos con su descripción
 ```
@@ -67,10 +82,11 @@ implementaciones
         vivado_project // Proyecto de Vivado utilizado para la implementación del diseño, mediante una plataforma objetivo AMD Kria KV260
 ```
 # Tabla de resultados
+Considerando que el timing/delay de la ruta crítica es igual a `periodo del reloj - WNS`, se obtuvieron los siguientes resultados
 
 Diseño | Timing/delay de la ruta crítica | Frecuencia máxima | Latencia en ciclos de reloj | Consumo de LUTs | Consumo de FFs
 --- | --- | --- | --- |--- |--- 
-Propuesto: Vedic uniciclo | 0.213 ns | 0 | 0 | 1410 | 8702 
-Propuesto: Vedic segmentado | 56.609 ns | 0 | 0 | 12089 | 14814
+Propuesto: Vedic uniciclo | 3.12 ns | 320.51 MHz | 0 | 8702 | 0 
+Propuesto: Vedic segmentado | 4.393 ns | 227.63 MHz | 28 | 12089 | 14814
 PENDIENTE | 0 | 0 | 0 | 0 | 0
 PENDIENTE | 0 | 0 | 0 | 0 | 0

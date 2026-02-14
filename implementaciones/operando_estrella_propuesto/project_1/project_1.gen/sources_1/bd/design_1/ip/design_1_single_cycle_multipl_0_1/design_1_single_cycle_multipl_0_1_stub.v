@@ -1,0 +1,23 @@
+// Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+// Date        : Wed Feb 11 03:15:51 2026
+// Host        : 73bff328fa37 running 64-bit Ubuntu 20.04.6 LTS
+// Command     : write_verilog -force -mode synth_stub
+//               /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_single_cycle_multipl_0_1/design_1_single_cycle_multipl_0_1_stub.v
+// Design      : design_1_single_cycle_multipl_0_1
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xck26-sfvc784-2LV-c
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* X_CORE_INFO = "single_cycle_multiplier,Vivado 2023.2" *)
+module design_1_single_cycle_multipl_0_1(a, b, product)
+/* synthesis syn_black_box black_box_pad_pin="a[63:0],b[63:0],product[127:0]" */;
+  input [63:0]a;
+  input [63:0]b;
+  output [127:0]product;
+endmodule

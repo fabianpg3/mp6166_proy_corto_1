@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Feb 11 01:39:31 2026
+# Process ID: 3328112
+# Current directory: /home/jgaitan/Documents/proyecto_1_borrador
+# Command line: vivado
+# Log file: /home/jgaitan/Documents/proyecto_1_borrador/vivado.log
+# Journal file: /home/jgaitan/Documents/proyecto_1_borrador/vivado.jou
+# Running On: 73bff328fa37, OS: Linux, CPU Frequency: 900.138 MHz, CPU Physical cores: 4, Host memory: 33330 MB
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /home/jgaitan/Documents/proyecto_1_borrador/project_1 -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
+add_files -norecurse /home/jgaitan/Documents/proyecto_1_borrador/single_cycle_multiplier.v
+update_compile_order -fileset sources_1
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports gpio_rtl]
+make_wrapper -files [get_files /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_1_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+create_bd_cell -type module -reference single_cycle_multiplier single_cycle_multipl_0
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports gpio_rtl]
+delete_bd_objs [get_bd_cells single_cycle_multipl_0]
+create_bd_cell -type module -reference single_cycle_multiplier single_cycle_multipl_0
+add_files -norecurse /home/jgaitan/Documents/proyecto_1_borrador/128to32_spliter.v
+update_compile_order -fileset sources_1
+update_module_reference {design_1_single_cycle_multipl_0_0 design_1_single_cycle_multipl_0_1}
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference spliter_128to32 spliter_128to32_0
+connect_bd_net [get_bd_pins single_cycle_multipl_0/product] [get_bd_pins spliter_128to32_0/product]
+startgroup
+set_property CONFIG.C_IS_DUAL {1} [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+connect_bd_net [get_bd_pins spliter_128to32_0/product_0] [get_bd_pins axi_gpio_0/gpio_io_i]
+endgroup
+connect_bd_net [get_bd_pins spliter_128to32_0/product_1] [get_bd_pins axi_gpio_0/gpio2_io_i]
+update_module_reference design_1_spliter_128to32_0_0
+delete_bd_objs [get_bd_nets spliter_128to32_0_product_0] [get_bd_nets spliter_128to32_0_product_1] [get_bd_nets single_cycle_multipl_0_product] [get_bd_cells spliter_128to32_0]
+create_bd_cell -type module -reference product_mux_2gpio product_mux_2gpio_0
+delete_bd_objs [get_bd_cells product_mux_2gpio_0]
+update_module_reference design_1_product_mux_2gpio_0_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_rtl]
+startgroup
+set_property CONFIG.C_IS_DUAL {1} [get_bd_cells axi_gpio_1]
+endgroup
+set_property location {3 1210 -258} [get_bd_cells single_cycle_multipl_0]
+create_bd_cell -type module -reference spliter_128to32 spliter_128to32_0
+connect_bd_net [get_bd_pins single_cycle_multipl_0/product] [get_bd_pins spliter_128to32_0/product]
+connect_bd_net [get_bd_pins spliter_128to32_0/product_0] [get_bd_pins axi_gpio_0/gpio_io_i]
+connect_bd_net [get_bd_pins spliter_128to32_0/product_1] [get_bd_pins axi_gpio_1/gpio_io_i]
+connect_bd_net [get_bd_pins spliter_128to32_0/product_2] [get_bd_pins axi_gpio_0/gpio2_io_i]
+connect_bd_net [get_bd_pins spliter_128to32_0/product_3] [get_bd_pins axi_gpio_1/gpio2_io_i]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_gpio_0/gpio2_io_o] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins single_cycle_multipl_0/a]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlconcat_1/In0]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_o] [get_bd_pins xlconcat_1/In1]
+connect_bd_net [get_bd_pins xlconcat_1/dout] [get_bd_pins single_cycle_multipl_0/b]
+regenerate_bd_layout
+validate_bd_design
+save_bd_design
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list \
+  CONFIG.PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ {300} \
+  CONFIG.PSU__FPGA_PL1_ENABLE {0} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+validate_bd_design
+save_bd_design
+generate_target all [get_files /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_auto_ds_0_synth_1
+wait_on_run design_1_auto_ds_0_synth_1
+launch_runs design_1_auto_ds_1_synth_1
+wait_on_run design_1_auto_ds_1_synth_1
+launch_runs design_1_auto_pc_0_synth_1
+wait_on_run design_1_auto_pc_0_synth_1
+launch_runs design_1_auto_pc_1_synth_1
+wait_on_run design_1_auto_pc_1_synth_1
+launch_runs design_1_axi_gpio_0_0_synth_1
+wait_on_run design_1_axi_gpio_0_0_synth_1
+launch_runs design_1_axi_gpio_1_0_synth_1
+wait_on_run design_1_axi_gpio_1_0_synth_1
+launch_runs design_1_rst_ps8_0_99M_0_synth_1
+wait_on_run design_1_rst_ps8_0_99M_0_synth_1
+launch_runs design_1_single_cycle_multipl_0_1_synth_1
+wait_on_run design_1_single_cycle_multipl_0_1_synth_1
+launch_runs design_1_spliter_128to32_0_1_synth_1
+wait_on_run design_1_spliter_128to32_0_1_synth_1
+launch_runs design_1_xbar_0_synth_1
+wait_on_run design_1_xbar_0_synth_1
+launch_runs design_1_zynq_ultra_ps_e_0_0_synth_1
+wait_on_run design_1_zynq_ultra_ps_e_0_0_synth_1
+synth_design -top design_1_wrapper -part xck26-sfvc784-2LV-c -lint 

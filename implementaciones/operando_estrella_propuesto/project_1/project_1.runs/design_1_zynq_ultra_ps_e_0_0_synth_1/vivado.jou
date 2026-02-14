@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Feb 11 03:18:03 2026
+# Process ID: 3430503
+# Current directory: /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_0_synth_1
+# Command line: vivado -log design_1_zynq_ultra_ps_e_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_zynq_ultra_ps_e_0_0.tcl
+# Log file: /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/design_1_zynq_ultra_ps_e_0_0.vds
+# Journal file: /home/jgaitan/Documents/proyecto_1_borrador/project_1/project_1.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/vivado.jou
+# Running On: 73bff328fa37, OS: Linux, CPU Frequency: 4118.059 MHz, CPU Physical cores: 4, Host memory: 33330 MB
+#-----------------------------------------------------------
+source design_1_zynq_ultra_ps_e_0_0.tcl -notrace

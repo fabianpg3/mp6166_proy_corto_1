@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Feb 14 01:00:31 2026
+# Process ID: 2278583
+# Current directory: /home/jgaitan/Documents/operando_estrella_propuesto
+# Command line: vivado
+# Log file: /home/jgaitan/Documents/operando_estrella_propuesto/vivado.log
+# Journal file: /home/jgaitan/Documents/operando_estrella_propuesto/vivado.jou
+# Running On: 73bff328fa37, OS: Linux, CPU Frequency: 4030.416 MHz, CPU Physical cores: 4, Host memory: 33330 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/jgaitan/Documents/operando_estrella_propuesto/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/jgaitan/Documents/operando_estrella_propuesto/source_code/single_cycle_multiplier.v /home/jgaitan/Documents/operando_estrella_propuesto/source_code/128to32_spliter.v}
+export_ip_user_files -of_objects  [get_files /home/jgaitan/Documents/operando_estrella_propuesto/128to32_spliter.v] -no_script -reset -force -quiet
+remove_files  /home/jgaitan/Documents/operando_estrella_propuesto/128to32_spliter.v
+export_ip_user_files -of_objects  [get_files /home/jgaitan/Documents/operando_estrella_propuesto/single_cycle_multiplier.v] -no_script -reset -force -quiet
+remove_files  /home/jgaitan/Documents/operando_estrella_propuesto/single_cycle_multiplier.v
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

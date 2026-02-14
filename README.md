@@ -88,5 +88,5 @@ Diseño | Timing/delay de la ruta crítica | Frecuencia máxima | Latencia en ci
 --- | --- | --- | --- |--- |--- 
 Propuesto: Vedic uniciclo | 3.12 ns | 320.51 MHz | 0 | 8702 | 0 
 Propuesto: Vedic segmentado | 4.393 ns | 227.63 MHz | 28 | 12089 | 14814
-64x64 con Operador * uniciclo | 2.00 ns | 333.4 MHz | 0 | 161 | 0
+64x64 con Operador * uniciclo | 2.99 ns | 333.4 MHz | 0 | 161 | 0
 PENDIENTE | 0 | 0 | 0 | 0 | 0

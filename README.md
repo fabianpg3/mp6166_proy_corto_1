@@ -1,6 +1,6 @@
 # mp6166_proy_corto_1
 
-# Descripción del proyecto **
+# Descripción del proyecto
 
 A continuación se presentan los resultados de la síntesis e implementación de tres diferentes diseños para la multiplicación entre dos operandos de 64 bits. Para ello se utilizaron diseños como: 1) arquitectura de 64x64 uniciclo usando el operador *, 2) Multiplicador de Booth 64x64 y 3) un diseño propuesto basado en matemáticas Védicas (Vedic multiplier). 
 
@@ -40,20 +40,17 @@ https://digitalsystemdesign.in/vedic-multiplier/?srsltid=AfmBOopUmrreXWVTSEUhyvt
 
 Con respecto al diseño que emplea matemáticas Védicas, en el caso de uniciclo se observa que el timing se cumple pero con un margen muy mínimo, ya que el WNS es de apenas 0.213 ns, lo cual se traduce en una frecuencia máxima de 320 MHz, tal como se mostrará más adelante. Esto indica que el diseño corre ligeramente por arriba de la frecuencia máxima objetivo, de 300 MHz, alrededor de un 6% mayor al objetivo. El consumo de recursos es también bastante elevado, ya que el reporte de utilización obtenido de 8702 LUTs para lógica secuencial es dos ordenes de magnitud mayor al de la implementación en uniciclo optimizada por la herramienta, por ejemplo.
 
-Por último, con respecto al caso segmentado del diseño que emplea matemáticas Védicas, se observa un timing completamente por fuera del objetivo planteado de 3.33 ns, equivalente a la frecuencia de operación de 300 MHz, ya que el delay de la ruta crítica fue de 4.393 ns, lo cual se traduce a una frecuencia máxima de 227.63 MHz; un 24% por debajo de la meta del diseño. Así mismo, nótese como el consumo de recursos crece exponencialmente, donde predomina el uso de celdas de registro debido al pipeline añadido entre etapas del diseño multiplicador. La latencia en ciclos de reloj igual a 28 fue obtenida mediante simulaciones funcionales pre-síntesis, gracias al ambiente de verificación que se desarrolló en UVM.
+En el caso del diseño segmentado que emplea matemáticas Védicas, se observa un timing completamente por fuera del objetivo planteado de 3.33 ns, equivalente a la frecuencia de operación de 300 MHz, ya que el delay de la ruta crítica fue de 4.393 ns, lo cual se traduce a una frecuencia máxima de 227.63 MHz; un 24% por debajo de la meta del diseño. Así mismo, nótese como el consumo de recursos crece exponencialmente, donde predomina el uso de celdas de registro debido al pipeline añadido entre etapas del diseño multiplicador. La latencia en ciclos de reloj igual a 28 fue obtenida mediante simulaciones funcionales pre-síntesis, gracias al ambiente de verificación que se desarrolló en UVM.
 
 El diseño 64x64 en uniciclo implementado mediante el operador *, se observa que el timing se cumple con un margen adecuado, ya que el delay de la ruta crítica es de 2.99 ns, lo cual se traduce en una frecuencia máxima de 333.4 MHz. Esto representa aproximadamente un 11% por encima de la frecuencia objetivo de 300 MHz, mostrando un margen superior al de la implementación Védica en uniciclo.
 
 En cuanto al consumo de recursos, el diseño presenta una utilización considerablemente menor, con apenas 161 LUTs y sin uso de flip-flops, al tratarse de una arquitectura completamente combinacional. Comparado con el multiplicador Védico uniciclo, cuya utilización alcanza 8702 LUTs, la diferencia es significativa, lo que evidencia una implementación mucho más eficiente en términos de área dentro del FPGA.
 
-En cuanto al diseño del multiplicador de booth se cumple el timing con un margen bueno, se tiene un WNS de 0.231 ns, que se ve reflejado en un delay de la ruta crítica de 3.102 ns, a su vez esto implica que la frecuencia máxima de operación es de 322.68 MHz, esto es un 7.56% por encima de la frecuencia objetivo. En referencia al consumo de recursos, se tiene un número de LUTs casi tan bajo como con el operador *, en este caso son apenas 167 LUTs, y en cuanto al uso de FFs se tienen 327, que son muchos menos que el diseño con matemáticas védicas, lo cual tambien hace notar que este multiplicador es un diseño bien optimizado en cuanto al consumo de área, además de que en términos de timing tambien se obtienen buenos resultados.
+Por último, con respecto al diseño del multiplicador de booth se cumple el timing con un margen bueno, se tiene un WNS de 0.231 ns, que se ve reflejado en un delay de la ruta crítica de 3.102 ns, a su vez esto implica que la frecuencia máxima de operación es de 322.68 MHz, esto es un 7.56% por encima de la frecuencia objetivo. En referencia al consumo de recursos, se tiene un número de LUTs casi tan bajo como con el operador *, en este caso son apenas 167 LUTs, y en cuanto al uso de FFs se tienen 327, que son muchos menos que el diseño con matemáticas védicas, lo cual tambien hace notar que este multiplicador es un diseño bien optimizado en cuanto al consumo de área, además de que en términos de timing tambien se obtienen buenos resultados.
 
 # Instrucciones de construcción
 
 Se procedió a implementar un proyecto en Vivado que emplea la tarjeta Kria KV260. Cada uno de los diseños se construyó mediante un bloque de IP Integrator. Finalmente, en cada uno de las carpetas de los diseños en el presente repositorio se entregan los diferentes proyectos de Vivado ya construidos. Una vez allí, se ejecutaron las fases de síntesis e implementación y así concluir con las métricas presentadas en la sección de Tabla de Resultados.
-
-PENDIENTE?
-
 
 # Arbol de archivos con su descripción
 ```

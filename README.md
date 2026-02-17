@@ -28,11 +28,13 @@ https://digitalsystemdesign.in/vedic-multiplier/?srsltid=AfmBOopUmrreXWVTSEUhyvt
 
 PENDIENTE 
 
-PENDIENTE
-
 Con respecto al diseño que emplea matemáticas Védicas, en el caso de uniciclo se observa que el timing se cumple pero con un margen muy mínimo, ya que el WNS es de apenas 0.213 ns, lo cual se traduce en una frecuencia máxima de 320 MHz, tal como se mostrará más adelante. Esto indica que el diseño corre ligeramente por arriba de la frecuencia máxima objetivo, de 300 MHz, alrededor de un 6% mayor al objetivo. El consumo de recursos es también bastante elevado, ya que el reporte de utilización obtenido de 8702 LUTs para lógica secuencial es dos ordenes de magnitud mayor al de la implementación en uniciclo optimizada por la herramienta, por ejemplo.
 
 Por último, con respecto al caso segmentado del diseño que emplea matemáticas Védicas, se observa un timing completamente por fuera del objetivo planteado de 3.33 ns, equivalente a la frecuencia de operación de 300 MHz, ya que el delay de la ruta crítica fue de 4.393 ns, lo cual se traduce a una frecuencia máxima de 227.63 MHz; un 24% por debajo de la meta del diseño. Así mismo, nótese como el consumo de recursos crece exponencialmente, donde predomina el uso de celdas de registro debido al pipeline añadido entre etapas del diseño multiplicador. La latencia en ciclos de reloj igual a 28 fue obtenida mediante simulaciones funcionales pre-síntesis, gracias al ambiente de verificación que se desarrolló en UVM.
+
+El diseño 64x64 en uniciclo implementado mediante el operador *, se observa que el timing se cumple con un margen adecuado, ya que el delay de la ruta crítica es de 2.99 ns, lo cual se traduce en una frecuencia máxima de 333.4 MHz. Esto representa aproximadamente un 11% por encima de la frecuencia objetivo de 300 MHz, mostrando un margen superior al de la implementación Védica en uniciclo.
+
+En cuanto al consumo de recursos, el diseño presenta una utilización considerablemente menor, con apenas 161 LUTs y sin uso de flip-flops, al tratarse de una arquitectura completamente combinacional. Comparado con el multiplicador Védico uniciclo, cuya utilización alcanza 8702 LUTs, la diferencia es significativa, lo que evidencia una implementación mucho más eficiente en términos de área dentro del FPGA.
 
 # Instrucciones de construcción
 

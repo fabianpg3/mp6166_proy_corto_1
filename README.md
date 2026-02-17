@@ -1,5 +1,11 @@
 # mp6166_proy_corto_1
 
+Curso: Diseño avanzado con FPGAs.
+Programa: Maestría en Electrónica, énfasis en microelectrónica.
+Institución: Instituto Tecnológico de Costa RIca.
+Profesor: Luis G. León-Vega, Ph.D.
+Estudiantes: Fabián Alberto Picado-García, Jhon Gaitán-Aguilar y Paulo Cordero-Villalobos.
+
 # Descripción del proyecto
 
 A continuación se presentan los resultados de la síntesis e implementación de tres diferentes diseños para la multiplicación entre dos operandos de 64 bits. Para ello se utilizaron diseños como: 1) arquitectura de 64x64 uniciclo usando el operador *, 2) Multiplicador de Booth 64x64 y 3) un diseño propuesto basado en matemáticas Védicas (Vedic multiplier). 

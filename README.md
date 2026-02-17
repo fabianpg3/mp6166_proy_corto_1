@@ -8,7 +8,7 @@ Para el diseño del multiplicador de booth se usó la siguiente referencia:
 
 https://www.slideshare.net/slideshow/booth-algorithm-for-multiplication-249883028/249883028#2
 
-Se usó IA de la siguiente manera:
+Se usó IA de la siguiente manera (Para el multiplicador de booth):
 
 Herramienta: ChatGPT
 
@@ -17,6 +17,7 @@ Tipo de uso: verificación
 Grado de dependencia: medio
 
 Justificación y validación realizada: se usó para generar un par de ejemplos del algoritmo de multiplicacion de booth con el proposito de comprender el funcionamiento, además se verificó con esta herramienta que el codigo de verilog escrito si replica correctamente el algoritmo sin ningún error de algún caso esquina.
+
 
 
 Para el diseño propuesto basado en matemáticas Védicas, se utilizaron las siguientes referencias:

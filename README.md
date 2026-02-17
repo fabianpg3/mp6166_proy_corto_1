@@ -1,4 +1,5 @@
 # mp6166_proy_corto_1
+Enlace al repositorio: https://github.com/fabianpg3/mp6166_proy_corto_1
 
 Curso: Diseño avanzado con FPGAs.
 Programa: Maestría en Electrónica, énfasis en microelectrónica.
